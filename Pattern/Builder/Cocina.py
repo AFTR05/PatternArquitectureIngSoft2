@@ -1,4 +1,6 @@
-from .PizzaBuilder import *
+from PizzaBuilder import PizzaBuilder
+from HawaiPizzaBuilder import HawaiPizzaBuilder
+from BolognesePizzaBuilder import BolognesePizzaBuilder
 
 class Cocina:
     def set_pizza_builder(self, pb):
@@ -14,11 +16,17 @@ class Cocina:
 
 
 if __name__ == "__main__":
-    cocina = Cocina()
+    cocinaBolognese = Cocina()
+    bolognese_pizza_builder = BolognesePizzaBuilder()
+    cocinaBolognese.set_pizza_builder(bolognese_pizza_builder)
+    pizzaBolognese= cocinaBolognese.get_pizza()
+    
+    cocinaHawai = Cocina()
     hawai_pizza_builder = HawaiPizzaBuilder()
+    cocinaHawai.set_pizza_builder(hawai_pizza_builder)
+    pizzaHawai = cocinaHawai.get_pizza()
 
-    cocina.set_pizza_builder(hawai_pizza_builder)
-    cocina.construir_pizza()
 
-    pizza = cocina.get_pizza()
-    print(pizza)
+    
+    print(f"Pizza Hawaiana \n{pizzaHawai}\n")
+    print(f"Pizza Bolognese \n{pizzaBolognese}")
