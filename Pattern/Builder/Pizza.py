@@ -6,3 +6,5 @@ class Pizza:
     
     def __str__(self):
         return f"Masa: {self.masa}, Salsa: {self.salsa}, Relleno {self.relleno}"
+
+# Clase pizza con atributos y modificacion de metodo toString

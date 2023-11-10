@@ -1,6 +1,8 @@
 from PizzaBuilder import PizzaBuilder
 from Pizza import Pizza
 
+## Builder de pizza bolognesa
+
 class BolognesePizzaBuilder(PizzaBuilder):
     def __init__(self):
         self.pizza=Pizza()    

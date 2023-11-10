@@ -13,3 +13,5 @@ class PizzaBuilder:
     def get_pizza(self):
         pass
 
+
+# Builder de pizza se usa como interface

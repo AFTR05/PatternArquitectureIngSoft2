@@ -2,6 +2,8 @@ from PizzaBuilder import PizzaBuilder
 from HawaiPizzaBuilder import HawaiPizzaBuilder
 from BolognesePizzaBuilder import BolognesePizzaBuilder
 
+## Lugar donode se crean pizzas y se envia la implementacion de builder
+
 class Cocina:
     def set_pizza_builder(self, pb):
         self.pizza_builder = pb
