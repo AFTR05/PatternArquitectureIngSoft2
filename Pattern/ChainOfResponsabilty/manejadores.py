@@ -1,5 +1,5 @@
 # Clases de manejadores concretos
-from pedido import Pedido
+from Pedido import Pedido
 
 class ManejadorPedido:
     def __init__(self):

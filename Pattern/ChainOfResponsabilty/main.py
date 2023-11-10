@@ -1,5 +1,5 @@
 # Archivo principal para probar
-from pedido import Pedido
+from Pedido import Pedido
 from manejadores import (
     ManejadorVerificacionStock,
     ManejadorVerificacionCredito,
